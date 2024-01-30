@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/videoThumbnail"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoId"
+        android:text="videoId"
+        android:textSize="22sp"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoQuality"
+        android:text="videoQuality"
+        android:textSize="22sp"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="videoFileType"
+        android:textSize="22sp"
+        android:id="@+id/videofileType"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="videoDuration"
+        android:textSize="22sp"
+        android:id="@+id/duration"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="videoResolution"
+        android:textSize="22sp"
+        android:id="@+id/videoResolution"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="videoUploadedBY"
+        android:textSize="22sp"
+        android:id="@+id/videoUploadedBy"
+        android:layout_marginTop="2dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/viewUserButton"
+        app:icon="@drawable/baseline_open_in_new_24"
+        android:text="View user"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:icon="@drawable/baseline_play_arrow_24"
+        android:id="@+id/playButton"
+        android:text="Play Video"
+        android:layout_marginStart="5dp"/>
+
+
+</LinearLayout>
 
 </LinearLayout>
